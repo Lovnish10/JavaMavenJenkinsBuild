@@ -31,7 +31,7 @@ tools {
             }
             post{
                     success{
-                        echo "we are successfull"
+                      //  echo "we are successfull"
                         archiveArtifacts 'target/*.jar'
                     }
             }
