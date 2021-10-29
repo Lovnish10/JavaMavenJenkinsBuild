@@ -21,7 +21,7 @@ tools {
             post{
                 always{
                     
-                    junit 'C:\Users\wil10\.jenkins\workspace\mavenJavaApi\target\surefire-reports\*.xml'
+                    junit '**/target/surefire-reports/*.xml'
                 }
             }
         }
