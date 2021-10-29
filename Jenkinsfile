@@ -30,12 +30,10 @@ tools {
                 bat 'mvn package'
             }
             post{
-                always{
                     success{
                         echo "we are successfull"
-                        //archiveArtifacts 'target/*.jar'
+                        archiveArtifacts 'target/*.jar'
                     }
-                }
             }
         }
     }
