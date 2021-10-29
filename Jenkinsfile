@@ -19,9 +19,21 @@ tools {
                 bat 'mvn test'
             }
             post{
-                always{
-                    
+                always{ 
                     junit '**/target/surefire-reports/TEST-*.xml'
+                }
+            }
+        }
+
+        stage('publish'){
+            steps{
+                bat 'mvn package'
+            }
+            post{
+                always{
+                    success{
+                        archiveArtifacts 'target/*.jar'
+                    }
                 }
             }
         }
