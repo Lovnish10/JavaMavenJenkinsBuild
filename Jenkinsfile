@@ -21,7 +21,7 @@ tools {
             post{
                 always{
                     
-                    junit '**/target/surefire-reports/TEST-com.coralogix.calculator.services.AddServiceTest.xml'
+                    junit '**/target/surefire-reports/TEST-*.xml'
                 }
             }
         }
