@@ -32,7 +32,8 @@ tools {
             post{
                 always{
                     success{
-                        archiveArtifacts 'target/*.jar'
+                        echo "we are successfull"
+                        //archiveArtifacts 'target/*.jar'
                     }
                 }
             }
