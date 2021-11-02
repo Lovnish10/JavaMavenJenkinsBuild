@@ -19,6 +19,8 @@ tools {
                 script{
                 
                     println "this is yaml step"
+                    Map filee = readYaml file:'config.yml'
+                    println filee
                 
                 }
             }
