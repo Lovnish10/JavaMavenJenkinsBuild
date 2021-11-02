@@ -23,7 +23,7 @@ tools {
                     println filee
                     println "printing java version"
                     def javaHome = tool 'jdk8'
-                    prinln 'javaHome is given by ${javaHome}'
+                    println 'javaHome is given by ${javaHome}'
                 
                 }
             }
