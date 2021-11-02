@@ -21,6 +21,9 @@ tools {
                     println "this is yaml step"
                     Map filee = readYaml file:'config.yml'
                     println filee
+                    println "printing java version"
+                    def javaHome = tool 'jdk8'
+                    prinln 'javaHome is given by ${javaHome}'
                 
                 }
             }
