@@ -13,6 +13,16 @@ tools {
                bat "mvn  clean compile"
             }
         }
+        
+        stage('printYaml'){
+            steps{
+                script{
+                
+                    println "this is yaml step"
+                
+                }
+            }
+        }
 
         stage('test'){
             steps{
