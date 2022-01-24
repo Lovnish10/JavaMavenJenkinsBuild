@@ -51,5 +51,14 @@ tools {
                     }
             }
         }
+
+        stage('get jar path'){
+            steps{
+                script{
+                    def file = findFiles(glob : '**/target/*.jar')
+                    println(file)
+                }
+            }
+        }
     }
 }
