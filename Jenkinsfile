@@ -56,7 +56,7 @@ tools {
             steps{
                 script{
                     def file = findFiles(glob : '**/target/*.jar')
-                    println(file)
+                    println(file[0].path)
                 }
             }
         }
